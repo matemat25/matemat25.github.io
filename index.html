@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Warlands SMP – Exkluzív Minecraft Szerver</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif; }
+    body {
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #ffffff;
+      line-height: 1.6;
+    }
+    header {
+      text-align: center;
+      padding: 80px 20px;
+      background: rgba(0,0,0,0.4);
+    }
+    header h1 {
+      font-size: 3rem;
+      letter-spacing: 2px;
+      margin-bottom: 15px;
+    }
+    header p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto;
+      opacity: 0.9;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      padding: 15px;
+      background: rgba(0,0,0,0.6);
+      position: sticky;
+      top: 0;
+    }
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover { color: #00e5ff; }
+
+    section {
+      padding: 70px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    section h2 {
+      text-align: center;
+      font-size: 2.2rem;
+      margin-bottom: 40px;
+      color: #00e5ff;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+    .card {
+      background: rgba(0,0,0,0.5);
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    }
+    .card h3 {
+      margin-bottom: 15px;
+      color: #00e5ff;
+    }
+    .cta {
+      text-align: center;
+      background: rgba(0,0,0,0.6);
+      padding: 60px 20px;
+    }
+    .cta h2 { margin-bottom: 20px; }
+    .cta p { margin-bottom: 30px; }
+    .cta a {
+      display: inline-block;
+      padding: 15px 35px;
+      background: #00e5ff;
+      color: #000;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: transform 0.3s, background 0.3s;
+    }
+    .cta a:hover {
+      background: #00bcd4;
+      transform: scale(1.05);
+    }
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: rgba(0,0,0,0.7);
+      font-size: 0.9rem;
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+
+  <header id="home">
+    <h1>Warlands SMP</h1>
+    <p>Egy exkluzív, whitelistelt Minecraft SMP szerver, ahol csak a legelhivatottabb játékosok kapnak helyet.</p>
+  </header>
+
+  <nav>
+    <a href="#home">Főoldal</a>
+    <a href="#about">A szerverről</a>
+    <a href="#rules">Szabályok</a>
+    <a href="#join">Csatlakozás</a>
+  </nav>
+
+  <section id="about">
+    <h2>A Warlands SMP</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Exkluzív közösség</h3>
+        <p>A Warlands SMP egy zárt, barátságos és érett közösségre épül, ahol a minőség fontosabb a mennyiségnél.</p>
+      </div>
+      <div class="card">
+        <h3>Vanilla+ élmény</h3>
+        <p>Klasszikus SMP élmény kisebb kiegészítésekkel, amelyek nem rontják el a Minecraft eredeti hangulatát.</p>
+      </div>
+      <div class="card">
+        <h3>Aktív admin csapat</h3>
+        <p>Folyamatos felügyelet, gyors segítség és korrekt döntések minden játékos számára.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="rules">
+    <h2>Alapvető szabályok</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Tisztelet</h3>
+        <p>Minden játékos köteles tisztelettel bánni másokkal. Toxic viselkedés nem megengedett.</p>
+      </div>
+      <div class="card">
+        <h3>Cheatek tiltva</h3>
+        <p>Bármilyen csalás, exploit vagy unfair előny azonnali kizárást von maga után.</p>
+      </div>
+      <div class="card">
+        <h3>Griefelés</h3>
+        <p>Más játékos építményeinek rongálása szigorúan tilos, kivéve ha RP vagy esemény engedi.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta" id="join">
+    <h2>Csatlakoznál?</h2>
+    <p>A Warlands SMP whitelistelt szerver. Jelentkezéshez csatlakozz a Discord szerverünkhöz és töltsd ki az űrlapot.</p>
+    <a href="#">Discord meghívó</a>
+  </section>
+
+  <footer>
+    <p>© 2025 Warlands SMP | Nem hivatalos Minecraft projekt. Minecraft © Mojang Studios</p>
+  </footer>
+
+</body>
+</html>
