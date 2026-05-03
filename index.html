@@ -3,132 +3,189 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FantasyMC</title>
+    <title>Warlands SMP | 1.21.1</title>
     <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
     <style>
-        /* Alap stílusok */
         body {
             margin: 0;
             font-family: 'Arial', sans-serif;
-            background: linear-gradient(135deg, #5e2ec5, #9b59b6);
+            background: radial-gradient(circle, #2e1a47 0%, #0f0f0f 100%);
             color: #fff;
+            scroll-behavior: smooth;
         }
 
         header {
-            background-color: rgba(0,0,0,0.4);
-            padding: 2rem;
+            background-color: rgba(0,0,0,0.6);
+            padding: 3rem;
             text-align: center;
             font-family: 'MedievalSharp', cursive;
-            font-size: 3rem;
-            letter-spacing: 4px;
-            text-shadow: 2px 2px #000;
+            font-size: 3.5rem;
+            letter-spacing: 5px;
+            color: #d19fff;
+            text-shadow: 0 0 20px #9b59b6, 3px 3px #000;
+            border-bottom: 2px solid #ffe600;
         }
 
         nav {
             text-align: center;
-            margin: 1rem 0;
+            margin: 0;
+            padding: 1rem;
+            background: rgba(0,0,0,0.8);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
 
         nav a {
             color: #f0f0f0;
-            margin: 0 1rem;
+            margin: 0 1.5rem;
             text-decoration: none;
             font-weight: bold;
-            font-size: 1.2rem;
+            font-size: 1.1rem;
+            text-transform: uppercase;
             transition: 0.3s;
         }
 
         nav a:hover {
             color: #ffe600;
+            text-shadow: 0 0 10px #ffe600;
         }
 
         section {
-            max-width: 1000px;
-            margin: 2rem auto;
-            padding: 1rem;
-            background-color: rgba(0,0,0,0.3);
-            border-radius: 12px;
+            max-width: 1100px;
+            margin: 3rem auto;
+            padding: 2rem;
+            background-color: rgba(255,255,255,0.05);
+            border-radius: 20px;
+            border: 1px solid rgba(209, 159, 255, 0.2);
+            backdrop-filter: blur(5px);
         }
 
         h2 {
             color: #ffe600;
             text-align: center;
-            font-size: 2rem;
-            margin-bottom: 1rem;
+            font-size: 2.5rem;
+            font-family: 'MedievalSharp', cursive;
+            margin-bottom: 1.5rem;
         }
 
-        .servers {
+        .features {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             gap: 2rem;
         }
 
-        .server {
-            background-color: rgba(255,255,255,0.1);
-            border: 2px solid #d19fff;
-            border-radius: 12px;
-            padding: 1.5rem;
-            width: 250px;
+        .card {
+            background: rgba(0,0,0,0.5);
+            border: 2px solid #4a2d7a;
+            border-radius: 15px;
+            padding: 2rem;
+            width: 280px;
             text-align: center;
+            transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            border-color: #ffe600;
+            box-shadow: 0 0 30px rgba(255, 230, 0, 0.2);
+        }
+
+        .card h3 {
+            font-size: 1.6rem;
+            color: #d19fff;
+            margin-bottom: 1rem;
+        }
+
+        .highlight {
+            color: #ffe600;
+            font-weight: bold;
+        }
+
+        .ip-box {
+            background: #ffe600;
+            color: #000;
+            padding: 1rem;
+            border-radius: 10px;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 1rem;
+            cursor: pointer;
             transition: 0.3s;
         }
 
-        .server:hover {
-            transform: scale(1.05);
-            border-color: #ffe600;
-        }
-
-        .server h3 {
-            font-size: 1.5rem;
-            color: #ffeb3b;
-            margin-bottom: 1rem;
+        .ip-box:hover {
+            background: #fff;
+            transform: scale(1.1);
         }
 
         footer {
             text-align: center;
-            padding: 1rem;
-            background-color: rgba(0,0,0,0.4);
-            font-size: 0.9rem;
-            margin-top: 2rem;
+            padding: 2rem;
+            background-color: rgba(0,0,0,0.9);
+            font-size: 1rem;
+            border-top: 1px solid #4a2d7a;
+            color: #888;
         }
     </style>
 </head>
 <body>
 
 <header>
-    FantasyMC
+    WARLANDS SMP
 </header>
 
 <nav>
-    <a href="#kitpvp">KitPvP</a>
-    <a href="#kingdoms">Kingdoms</a>
+    <a href="#info">A Világról</a>
+    <a href="#events">Kihívások</a>
+    <a href="#media">Partnereink</a>
+    <a href="#rules">Szabályzat</a>
 </nav>
 
-<section id="kitpvp">
-    <h2>KitPvP Szerver</h2>
-    <div class="servers">
-        <div class="server">
-            <h3>KitPvP</h3>
-            <p>Gyors, intenzív PvP akciók.</p>
-            <p>IP: kitpvp.fantasymc.net</p>
+<section id="info">
+    <h2>Üdvözlünk a Háború és Mágia földjén!</h2>
+    <p style="text-align: center; font-size: 1.2rem; line-height: 1.6;">
+        A <b>Warlands SMP</b> nem egy átlagos túlélő szerver. Itt a 1.21.1-es verzió minden veszélye és 
+        mágikus lehetősége vár rád. Készülj fel a harcra, építs szövetségeket és hódítsd meg a dimenziókat!
+    </p>
+    <div style="text-align: center;">
+        <div class="ip-box">IP: play.warlands.hu</div>
+    </div>
+</section>
+
+<section id="events" style="background: rgba(155, 89, 182, 0.1);">
+    <h2>Egyedi Játékélmény</h2>
+    <div class="features">
+        <div class="card">
+            <h3>Vérhold Éjszakák</h3>
+            <p>Amikor felkel a hold, a Warlands szörnyei megerősödnek. Csak a legbátrabbak maradnak életben reggelig.</p>
+        </div>
+        <div class="card" style="border-color: #ffe600;">
+            <h3>Dimenzió Kapu</h3>
+            <p>Használd a spawn mágikus 3x3-as platformját, hogy eljuss az <span class="highlight">Abyss</span>-be, ahol ultra erős bossok várnak.</p>
+        </div>
+        <div class="card">
+            <h3>Staff & Közösség</h3>
+            <p>Profi vezetőség, moderált chat és folyamatos fejlesztések biztosítják a minőségi játékidőt.</p>
         </div>
     </div>
 </section>
 
-<section id="kingdoms">
-    <h2>Kingdoms Szerver</h2>
-    <div class="servers">
-        <div class="server">
-            <h3>Kingdoms</h3>
-            <p>Építsd fel birodalmad és harcolj másokkal!</p>
-            <p>IP: kingdoms.fantasymc.net</p>
+<section id="media">
+    <h2>Szerződött Tartalomgyártók</h2>
+    <p style="text-align: center;">Akik a <b>Warlands</b> hírnevét öregbítik:</p>
+    <div class="features">
+        <div class="card" style="width: 200px; padding: 1rem; border-style: dashed;">
+            <h3>Helyfoglaló</h3>
+            <p>Hamarosan itt láthatod partnereinket!</p>
         </div>
     </div>
 </section>
 
 <footer>
-    &copy; 2025 FantasyMC | Minden jog fenntartva
+    &copy; 2026 Warlands SMP | Verzió: 1.21.11 <br>
+    <small>A szerver független, nem áll kapcsolatban a Mojang AB-vel.</small>
 </footer>
 
 </body>
